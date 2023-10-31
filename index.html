@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Halloween</title>
+</head>
+
+<style>
+    body {
+        background: #232D3F;
+    }
+
+    .image {
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+
+    img {
+        filter: drop-shadow(0 0 30px #abc);
+        margin: auto;
+        animation: glow 2s alternate infinite;
+        
+        
+        -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    }
+
+    @keyframes glow {
+        0% {
+            filter: drop-shadow(0 0 10px #abc);
+        }
+        100% {
+            filter: drop-shadow(0 0 50px #abc);
+        }
+    }
+
+    @-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-60px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-60px); }
+}
+</style>
+
+
+
+<body>
+    <div class="image">
+    <img src="ghost.png" width="40%">
+</div>
+</body>
+</html>
